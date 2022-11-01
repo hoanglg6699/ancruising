@@ -1,0 +1,89 @@
+.navbar {
+  font-family: "SVN-Poppins", sans-serif;
+  display: flex;
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: rgba(32, 165, 185, 0.9);
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  z-index: 10;
+}
+
+.navbar > :nth-child(1) {
+  /* margin-right: 30px; */
+  display: flex;
+  margin: 0 30px;
+  /* padding-top: 10px; */
+  /* padding-right: -10px; */
+}
+
+.navbar-item {
+  position: relative;
+  padding: 0 2rem;
+  margin: 0 2px;
+  width: 85px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-item_wrapper {
+  height: 100%;
+  text-decoration: none;
+}
+
+.navbar-item_wrapper:hover {
+  /* color: #ffdb69; */
+  background: linear-gradient(
+    180deg,
+    rgba(80, 80, 80, 0.05) 0%,
+    rgba(0, 65, 102, 0.05) 0.01%,
+    rgba(0, 65, 102, 0.5) 100%
+  );
+}
+
+.navbar-item_wrapper:hover .navbar-item_img,
+.navbar-item_wrapper:hover .navbar-item_span {
+    color: #ffdb69;
+}
+.navbar-item_link {
+  text-decoration: none;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar-item_img_div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2px;
+  margin-top: 10px;
+}
+
+.navbar-item_img {
+  display: flex;
+}
+
+.navbar-item_span {
+  display: flex;
+  width: 100%;
+  font-size: 12px;
+  justify-content: center;
+  font-weight: 600;
+}
+
+.navbar-item_space {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 16px;
+  top: 30%;
+  transform: translateY(-50%);
+}

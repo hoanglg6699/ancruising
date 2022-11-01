@@ -1,0 +1,44 @@
+.menu-left {
+    width: 32px;
+    position: fixed;
+    left: 8px;
+    /* z-index: 15; */
+    height: 100%;
+    top: 0;
+}
+
+.menu-sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.guide-icon {
+    width: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 8 !important;
+    text-align: center;
+}
+
+.guide-icon > a {
+    position: absolute;
+    bottom: 46px;
+    left: 193px;
+    width: 98px;
+    height: 36px;
+}
+
+.guide-icon-opacity {
+    background: black;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    position: fixed;
+}

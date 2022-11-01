@@ -1,0 +1,29 @@
+.switch-view {
+  width: 100%;
+  position: absolute;
+  top: 22px;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+}
+
+.switch-view .switch-view-btn {
+  margin: 0 auto;
+  background: rgba(24, 25, 31, 0.6);
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+
+.switch-view .switch-btn {
+  background-color: #2fd1db;
+}
+
+.switch-view-left {
+  font-family: "SVN-Poppins", sans-serif;
+  margin-right: 10px;
+  vertical-align: top;
+  line-height: 24px;
+}
