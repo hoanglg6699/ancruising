@@ -18,7 +18,7 @@ const Body = (props) => {
       {isLoading ? (
         <Intro />
       ) : (
-        <div>
+        <>
           <React360
             dir={
               isSwitch
@@ -32,7 +32,7 @@ const Body = (props) => {
             isVisible={props.isVisible}
             setIsVisible={props.setIsVisible}
           />
-        </div>
+        </>
       )}
     </div>
   );
