@@ -1,0 +1,21 @@
+.loader {
+    background: white;
+}
+
+.loader_content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+    /* flex-direction: column; */
+}
+
+.loader_content > img {
+    padding: 20px 0;
+    width: 100%;
+}
+
+.loading_title {
+    padding: 20px 0;
+    font-weight: 600;
+}
