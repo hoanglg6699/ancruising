@@ -9,14 +9,14 @@ const Body = (props) => {
   const [isSwitch, setIsSwitch] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
 
-  setTimeout(() => {
-    setIsLoading(false);
-  }, 5400);
+  // setTimeout(() => {
+  //   setIsLoading(false);
+  // }, 5400);
 
   return (
     <div className="body">
       {isLoading ? (
-        <Intro />
+        <Intro isPlaying={isLoading} setIsPlaying={setIsLoading} />
       ) : (
         <>
           <React360

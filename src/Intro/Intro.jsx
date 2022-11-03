@@ -4,8 +4,8 @@ import intro from "../assets/Videos/overview.mp4";
 import Play from "../assets/Icons/icon-play.png";
 import Pause from "../assets/Icons/icon-pause.png";
 
-const Intro = () => {
-  const [isPlaying, setIsPlaying] = useState(true);
+const Intro = (props) => {
+  // const [isPlaying, setIsPlaying] = useState(true);
   const [click, setClick] = useState(false);
 
   const videoRef = useRef(null);
@@ -21,7 +21,7 @@ const Intro = () => {
 
   return (
     <div className="intro">
-      {isPlaying ? (
+      {props.isPlaying ? (
         <section className="menu-right">
           <ul className="menu-sub">
             <li className="menu-sub-item">
@@ -43,7 +43,7 @@ const Intro = () => {
         </section>
       ) : null}
 
-      {isPlaying ? (
+      {props.isPlaying ? (
         <video
           className="intro-video"
           autoPlay
@@ -51,7 +51,7 @@ const Intro = () => {
           ref={videoRef}
           src={intro}
           type="video/mp4"
-          onEnded={() => setIsPlaying(false)}
+          onEnded={() => props.setIsPlaying(false)}
         />
       ) : null}
     </div>
